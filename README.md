@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 HttpStatus
 
 
@@ -14,3 +15,8 @@ Envoyer un message si un K.O
 
 comment deployer l'Api:
 Telecharger la 
+=======
+# HttpStatus
+
+yes
+>>>>>>> master
