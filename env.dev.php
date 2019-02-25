@@ -6,7 +6,7 @@
 	//On défini l'environment
     $env = [
         'DATABASE_HOST' => 'localhost',
-        'DATABASE_NAME' => 'borie_scotto',
+        'DATABASE_NAME' => 'Scotto_Borie',
         'DATABASE_USER' => 'root',
         'DATABASE_PASSWORD' => 'bernardbernard',
     ];
