@@ -3,10 +3,10 @@
 		Ce fichier défini les constantes modifiables et les options
 	*/
 
-	//On défini l'environment
+	//define env
     $env = [
         'DATABASE_HOST' => 'localhost',
-        'DATABASE_NAME' => 'Scotto_Borie',
+        'DATABASE_NAME' => 'scottotest',
         'DATABASE_USER' => 'root',
         'DATABASE_PASSWORD' => 'bernardbernard',
     ];

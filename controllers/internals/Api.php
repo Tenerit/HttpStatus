@@ -60,7 +60,7 @@ class Api extends \InternalController
         }
     }
 
-    public function getSiteByIdAndUrl(int $id, stirng $url_site)
+    public function getSiteByIdAndUrl(int $id, string $url_site)
     {
         $site = $this->model_api->get_site_by_id_url($id, $url_site);
 
@@ -76,6 +76,19 @@ class Api extends \InternalController
     public function getOneHistory(int $id)
     {
         $history = $this->model_api->get_one_history($id);
+
+        if($history)
+        {
+            return $history;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public function getHistory(int $id)
+    {
+        $history = $this->model_api->get_all_history($id);
 
         if($history)
         {

@@ -1,0 +1,5 @@
+<?php
+
+	//Define env
+    $env = [
+    ];

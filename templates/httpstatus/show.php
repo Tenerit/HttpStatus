@@ -24,5 +24,5 @@
         </tbody>
     </table>
 </div>
-    </body>
-</html>
+
+<?php include(PWD_TEMPLATES . '/incs/footer.php'); ?>

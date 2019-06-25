@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS Scotto_Borie;
-use Scotto_Borie;
+CREATE DATABASE IF NOT EXISTS scottotest;
+use scottotest;
 
 -- Create table of exemple
 CREATE TABLE IF NOT EXISTS admin

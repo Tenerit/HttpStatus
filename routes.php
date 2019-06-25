@@ -1,6 +1,6 @@
 <?php
     $routes = array(
-        'httpstatus' => [
+        'Httpstatus' => [
             'home' => '/',
             'login' => '/login',
             'admin' => '/admin',

@@ -1,0 +1,18 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\controllers",
+    "\\controllers\\publics",
+    "\\descartes",
+    "\\descartes\\exceptions",
+    "\\static\\css",
+    "\\static\\img",
+    "\\static\\img\\login",
+    "\\templates\\httpstatus",
+    "\\tests\\controllers",
+    "\\tests\\controllers\\internals",
+    "\\tests\\controllers\\publics"
+  ],
+  "SelectedNode": "\\controllers\\publics\\Api.php",
+  "PreviewInSolutionExplorer": false
+}

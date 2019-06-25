@@ -33,5 +33,6 @@
         <?php } ?>
     </div>
 </div> 
-    </body>
-</html>
+
+
+<?php include(PWD_TEMPLATES . '/incs/footer.php'); ?>

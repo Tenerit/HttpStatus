@@ -95,6 +95,12 @@ class Httpstatus extends \InternalController
         return $one_site;
     }
 
+    public function showHistoric(int $id)
+    {
+        $historic = $this->model_httpstatus->get_historic_site($id);
+        return $historic;
+    }
+
     public function checkStatus()
     {
         $error_array = array();
@@ -158,6 +164,17 @@ class Httpstatus extends \InternalController
 
             echo 'check done';
         }
+    }
+
+    public function sendMail(string $url_site, datetime $date)
+    {
+        $headers = array(
+            'From' => 'webmaster@httpstatus.fr',
+            'Reply-to' => 'nobody@bye.fr',
+            'Content-type' => 'text/plain' 
+        );
+
+        mail('deschaussettes@yopmail.com', 'Site K.O', 'Le site ' .$url_site. 'est K.O depuis '. $date .' ', $headers);
     }
 
 }

@@ -34,10 +34,23 @@ class Httpstatus extends \Model
    }
 
    /**
+    * Modify a site
+    */
+   public function modifySite(int $id, string $url_site, int $status_site)
+   {
+      return $this->update('list_site', [
+         'url_site' => $url_site,
+         'status_site' => $status_site
+      ],
+      [
+         'id' => $id
+      ]
+   );
+   }
+
+   /**
     * Remove a site
     */
-    
-    
    public function removeSite(int $id)
    {
       return $this->delete('list_site', [
@@ -55,6 +68,15 @@ class Httpstatus extends \Model
       ]);
    }
 
+   /**
+    * Show historic
+    */
+   public function get_historic_site(int $id)
+   {
+      return $this->get('history_site', [
+         'id_site' => $id
+      ]);
+   }
 
    public function updateStatus(int $id, int $status)
    {
@@ -67,6 +89,16 @@ class Httpstatus extends \Model
       );
    }
 
-   
+   public function updateHistoric(int $id, int $status)
+   {
+      $update = (new \DateTime())->format('Y-m-d H:i:s');
+
+      return $this->insert('history_site', [
+         'id_site' => $id,
+         'status_site' => $status,
+         'update_site' => $update
+         ]
+      );
+   }
 
 }
